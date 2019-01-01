@@ -1,0 +1,7 @@
+
+  <select [(ngModel)]="customerNumber">
+    <option *ngFor="let item of dataCustomer" [value]=item.customerNumber>
+      {{item.customerNumber}}
+    </option>
+  </select>
+  

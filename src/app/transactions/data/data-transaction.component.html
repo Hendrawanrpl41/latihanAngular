@@ -1,0 +1,19 @@
+<a routerLink="/inputTransaction">Input</a>
+<table border = 1>
+  <tr>
+    <td>No</td>
+    <td>type</td>
+    <td>amount</td>
+    <td>amountSign</td>
+    <td>accountNumber</td>
+  </tr>
+  <tr *ngFor="let item of dataTransaction">
+    <td>{{item.id}}</td>
+    <td>{{item.type}}</td>
+    <td>{{item.amount}}</td>
+    <td>{{item.amountSign}}</td>
+    <td>{{item.account.accountNumber}}</td>
+    <td><a (click)=selectedData(item)>update</a></td>
+    <td><a (click)=delete(item.id)>delete</a></td>
+  </tr>
+</table>

@@ -1,0 +1,10 @@
+<Form [formGroup] = "fg">
+  <input formControlName = "type" placeholder="type">
+  <input formControlName = "amount" placeholder="amount">
+  <input formControlName = "amountSign" placeholder="amountSign">
+  <!-- <input formControlName = "accountNumber" placeholder="accountNumber"> -->
+  <app-combo-account></app-combo-account>
+  <button (click)=create()>Save</button>
+  <button>Cancel</button>
+</Form>
+

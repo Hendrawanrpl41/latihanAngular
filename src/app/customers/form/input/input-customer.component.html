@@ -1,0 +1,10 @@
+<form [formGroup]='fg'>
+  <input formControlName="firstName" placeholder="firstName">
+  <input formControlName="lastName" placeholder="lastName">
+  <input formControlName="birthDate" type="date" placeholder="birthDate">
+  <input formControlName="phoneType" placeholder="phoneType">
+  <input formControlName="phoneNumber" placeholder="phoneNumber">
+  <input formControlName="username" placeholder="username">
+  <input formControlName="password" placeholder="password">
+<button (click)="create()">Input Customer</button>
+</form>

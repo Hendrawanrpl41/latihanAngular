@@ -1,0 +1,10 @@
+<form [formGroup] = "fg">
+  <!-- <input formControlName = "accountNumber" type="hidden" > -->
+  <input formControlName = "openDate" type = "date" placeholder="openDate">
+  <input formControlName = "balance" type = "number" placeholder="balance">
+  <!-- <input formControlName = "customerNumber" type = "number" placeholder="customerNumber"> -->
+  <app-combo-customer></app-combo-customer>
+  <button (click)=create()>Save</button>
+  <button>Cancel</button>
+</form>
+  

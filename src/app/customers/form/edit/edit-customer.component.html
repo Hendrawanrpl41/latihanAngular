@@ -1,0 +1,13 @@
+<form [formGroup]='fg'>
+    <input formControlName='customerNumber' type="hidden">
+    <input class="form-control" placeholder="fist Name" formControlName='firstName'><br>
+    <input class="form-control" placeholder="Last Name" formControlName='lastName'><br>
+    <input class="form-control" type="date" placeholder="Birth Date" formControlName="birthDate"><br>
+    <input class="form-control" placeholder="phone Type" formControlName="phoneType"><br>
+    <input class="form-control" type="number" placeholder="phone Number" formControlName="phoneNumber"><br>
+    <input class="form-control" placeholder="username" formControlName="username"><br>
+    <input class="form-control" placeholder="password" formControlName="password"><br>
+    <Button (click)=updateCustomer()>Update</Button>
+    <button>Cancel</button>
+</form>
+<!-- <app-data-customer></app-data-customer> -->

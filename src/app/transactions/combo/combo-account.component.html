@@ -1,0 +1,5 @@
+<select [(ngModel)]="accountNumber">
+  <option *ngFor="let item of dataAccount" [value]=item.accountNumber>
+    {{item.accountNumber}}
+  </option>
+</select>

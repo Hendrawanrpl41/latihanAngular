@@ -1,0 +1,25 @@
+<a routerLink="/inputCustomer">Input Data</a>
+<table border = 1>
+  <tr>
+    <td>customerNumber</td>
+    <td>firstName</td>
+    <td>lastName</td>
+    <td>birthDate</td>
+    <td>phoneType</td>  
+    <td>phoneNumber</td>
+    <td>username</td>
+    <td>password</td>
+  </tr>
+  <tr *ngFor="let item of dataCustomer">
+    <td>{{ item.customerNumber }}</td>
+    <td>{{ item.firstName }}</td>
+    <td>{{ item.lastName }}</td>
+    <td>{{ item.birthDate }}</td>
+    <td>{{ item.phoneType }}</td>
+    <td>{{ item.phoneNumber }}</td>
+    <td>{{ item.username }}</td>
+    <td>{{ item.password }}</td>
+    <td><a (click)="update(item)">update</a></td>
+    <td><a (click)="delete(item.customerNumber)">Delete</a></td>
+  </tr>
+</table>
